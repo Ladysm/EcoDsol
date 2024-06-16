@@ -5,7 +5,6 @@ import Image from 'next/image';
 import logo from '../../public/logoEco.png';
 import mobilelogo from '../../public/logomobile.png'
 
-import bglogos from '../../public/bglogo.png'
 export default function Nav() {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -15,7 +14,7 @@ export default function Nav() {
 
     return (
         <div className="w-screen h-screen overflow-hidden text-[15px] bg-hero-pattern bg-cover bg-no-repeat bg-top ">
-            <div className='bg-white flex justify-center py-2'>
+            <div className='bg-[#FFF] flex justify-center py-2'>
                 <span className=' text-[#0d121e]'>Creciendo en conjunto 🌿</span>
             </div>
        
@@ -30,7 +29,7 @@ export default function Nav() {
                 {/* ☘️🍃🍃🍀🍁 */}
                 </div>
                 
-                <ul className='hidden md:flex items-center space-x-10 lg:px-[30px] font-bold text-[15px] lg:py-0'>
+                <ul className='hidden md:flex items-center space-x-10 lg:px-[30px] font-bold text-[15px] lg:py-0 text-[#fff]'>
                     <li className='cursor-pointer'> Quienes somos</li>
                     <li className='cursor-pointer'>Servicios</li>
                     <li className='cursor-pointer'> Material pedagógico</li>
@@ -41,9 +40,9 @@ export default function Nav() {
                 
                 <div className='space-y-1 group md:hidden px-5'>
                     <button onClick={handleClick} className='space-y-1'>
-                        <div className='w-6 h-1 bg-white'></div>
-                        <div className='w-6 h-1 bg-white'></div>
-                        <div className='w-6 h-1 bg-white'></div>
+                        <div className='w-6 h-1 bg-[#fff]'></div>
+                        <div className='w-6 h-1 bg-[#fff]'></div>
+                        <div className='w-6 h-1 bg-[#fff]'></div>
                     </button>
 
                     
@@ -69,11 +68,7 @@ export default function Nav() {
                     )}
                 </div>
             </div>
-            {/* <Image
-      src={bgBanner}
-      alt="Picture of the author"
-      
-    /> */}
+        
         </div>
     );
 }
