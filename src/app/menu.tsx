@@ -14,27 +14,27 @@ export default function Nav() {
     };
 
     return (
-        <div className="w-screen h-screen overflow-hidden text-[15px] bg-hero-pattern bg-cover bg-no-repeat bg-top">
+        <div className="w-screen h-screen overflow-hidden text-[15px] bg-hero-pattern bg-cover bg-no-repeat bg-top ">
             <div className='bg-white flex justify-center py-2'>
                 <span className=' text-[#0d121e]'>Creciendo en conjunto 🌿</span>
             </div>
        
 
             
-            <div className='w-screen py-6 lg:py-0  lg:px-[0px] flex justify-between  text-white bg-[#0d121e]'>
+            <div className='w-screen py-6 lg:py-0  lg:px-[0px] flex justify-between  text-white'>
                 <div className='flex space-x-1 items-center lg:px-[0px]'>
                 
-                <Image className='lg:w-[500px] lg:flex md:hidden sm:hidden hidden' src = {logo} alt='logo' width={500}/>
+                <Image className='lg:w-[500px] lg:flex md:hidden sm:hidden hidden ' src = {logo} alt='logo' width={500}/>
                 <Image className='lg:hidden' src = {mobilelogo} alt='logo-mobile' width={200}/>
 
                 {/* ☘️🍃🍃🍀🍁 */}
                 </div>
                 
-                <ul className='hidden md:flex items-center space-x-10 lg:px-[30px] font-bold text-[20px]'>
+                <ul className='hidden md:flex items-center space-x-10 lg:px-[30px] font-bold text-[15px] lg:py-0'>
                     <li className='cursor-pointer'> Quienes somos</li>
                     <li className='cursor-pointer'>Servicios</li>
                     <li className='cursor-pointer'> Material pedagógico</li>
-                    <li className='cursor-pointer'>Contáctanos</li>
+                    <li className='cursor-pointer border-t-[1px] border-b-[1px] border-l-[1px] border-r-[1px] border-[#FFBB22] px-[6px] py-[6px] rounded-[5px] text-[#FFBB22]'>Contáctanos</li>
                   
                 </ul>
 
