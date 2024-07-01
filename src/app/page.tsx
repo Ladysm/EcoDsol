@@ -5,7 +5,8 @@ import cardImage from '../../public/teachericon.png'
 import alcaldiaImage from '../../public/alcaldia.png'
 import jovenesImage from '../../public/jovenes.png'
 import manosimage from '../../public/manos.png'
-import Carrousel from "./carrousel";
+import Button from "./button";
+import { ICONS } from '../app/config/list'
 
 export default function Home() {
   return (
@@ -28,8 +29,25 @@ export default function Home() {
     <p>Generar proyectos y programas de desarrollo humano y social, en beneficio de la promoción y el desarrollo integral del ciudadano de Colombia y del mundo, en las áreas de la educación, investigación científica, la salud, la informática, la cultura, conservación y protección ambiental, económico y financiero.</p> 
     <p>En el 2030 la corporación será reconocida a nivel departamental por su  gestión en la generación y ejecución de proyectos y programas que promuevan el desarrollo humano y social.</p>
     </section>
-    <Carrousel/>
-    
+    <section className="flex  flex-col bg-[#F4C379] justify-center  ">
+      <div className="flex flex-col gap-2 py-[32px] w-[78%] max-w-[450px] lg:w-[100%]  m-auto items-center ">
+      
+    <h2
+          className="text-[28px] pb-[20px] font-black text-white text-center leading-[40px] lg:text-[40px] lg:leading-[44px]"
+        >
+          NUESTRAS LINEAS <span
+            className="text-[35px] leading:[80px] lg:text-[50px] lg:leading-[40px]"
+            >DE CONTACTO</span>
+        </h2>
+        
+    {ICONS.map((icon)=> <Button
+    key={icon.name}
+    name={icon.name}
+    link={icon.link}
+    icon={icon.src}
+    />)}
+    </div>
+    </section>
     </div>
   
      
