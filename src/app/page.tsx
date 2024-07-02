@@ -9,6 +9,7 @@ import Button from "./button";
 import { ICONS } from '../app/config/list'
 import heart from '../../public/heart.png'
 import pleople from '../../public/people-metting.png'
+import Footer from "./footer";
 
 export default function Home() {
   return (
@@ -44,7 +45,7 @@ export default function Home() {
    </div>
     </div>
     </section>
-    <section className="flex  flex-col bg-[#F4C379] justify-center  ">
+    <section className="flex  flex-col bg-bg-sky bg-cover bg-no-repeat justify-center  ">
       <div className="flex flex-col gap-2 py-[32px] w-[78%] max-w-[450px] lg:w-[100%]  m-auto items-center ">
       
     <h2
@@ -63,8 +64,8 @@ export default function Home() {
     />)}
     </div>
     </section>
+    <Footer/> 
     </div>
-  
-     
+   
   );
 }

@@ -21,6 +21,7 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
           'hero-pattern': "url('/bg-people.png')",
           'social-container': "url('/social.png')",
+          'bg-sky': "url('/sky.png')"
       },
     },
   },
